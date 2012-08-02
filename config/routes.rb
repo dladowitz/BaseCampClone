@@ -1,10 +1,13 @@
 BaseCampClone::Application.routes.draw do
+  root :to => 'projects#index'
+
+  resources :projects
+  resources :memberships
+
 
   devise_for :users
 
-   root :to => 'tests#index'
 
-   resources :tests
 
 
   end
