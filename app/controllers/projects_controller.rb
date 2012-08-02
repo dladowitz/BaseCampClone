@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @lists = List.all
   end
 
   def new
@@ -30,5 +31,8 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
+    @project = Project.find(params[:id])
+    @project.delete
+    redirect_to(projects_path)
   end
 end

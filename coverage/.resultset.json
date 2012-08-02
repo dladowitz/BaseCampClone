@@ -12,6 +12,10 @@
         null,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/controllers/application_controller.rb": [
@@ -27,20 +31,96 @@
         1,
         null
       ],
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/helpers/memberships_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/helpers/projects_helper.rb": [
+        1,
+        null
+      ],
       "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/helpers/tests_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/controllers/tests_controller.rb": [
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/controllers/memberships_controller.rb": [
         1,
         1,
         null,
         null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/models/membership.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/controllers/projects_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/apprentice/Dropbox/DavidLadowitz/Week8/BaseCampClone/app/models/project.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1343858622
+    "timestamp": 1343936015
   }
 }

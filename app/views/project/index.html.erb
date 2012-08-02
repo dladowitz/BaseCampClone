@@ -7,7 +7,7 @@
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th>Public Project</th>
+      <th><%= model_class.human_attribute_name(:is_public) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -33,6 +33,6 @@
   </tbody>
 </table>
 
-<%= link_to "Create New Project",
+<%= link_to t('.new', :default => t("helpers.links.new")),
             new_project_path,
             :class => 'btn btn-primary' %>

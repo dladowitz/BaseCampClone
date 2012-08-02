@@ -1,11 +1,17 @@
 BaseCampClone::Application.routes.draw do
+
   root :to => 'projects#index'
 
-  resources :projects
-  resources :memberships
+  resources :projects do
+    resources :lists
+  end
 
+  resources :memberships
+  # resources :lists
 
   devise_for :users
+
+  # match '/lists/:id/new' => 'list#new'
 
 
 
