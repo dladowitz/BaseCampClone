@@ -26,3 +26,11 @@
 <%= link_to "Create New Todo List",
             new_project_list_path(@project),
             :class => 'btn btn-primary' %>
+
+<br />
+<br />
+<br />
+<h3>Todo Lists:</h3>
+<% @lists.each do |list| %>
+  <%= list.name %> <br/>
+<% end %>

@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-    @lists = List.all
+    @lists = @project.lists.all
   end
 
   def new

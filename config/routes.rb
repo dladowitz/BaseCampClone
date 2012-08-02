@@ -6,6 +6,10 @@ BaseCampClone::Application.routes.draw do
     resources :lists
   end
 
+  resources :lists do
+    resources :tasks
+  end
+
   resources :memberships
   # resources :lists
 
