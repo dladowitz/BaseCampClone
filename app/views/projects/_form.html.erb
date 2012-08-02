@@ -1,0 +1,17 @@
+<%= form_for(@project) do |f| %>
+
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit 'Create' , :class => 'btn btn-primary' %>
+
+</p>
+
+<p>
+  <%= f.radio_button :is_public, true %> <%= f.label :is_public, "Public" %>
+  <%= f.radio_button :is_public, false %> <%= f.label :is_public, "Private" %>
+</p>
+
+
+<% end %>
