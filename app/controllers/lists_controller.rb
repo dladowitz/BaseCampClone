@@ -4,7 +4,8 @@ class ListsController < ApplicationController
   end
 
   def show
-
+    @list = List.find(params[:id])
+    @tasks = @list.tasks.all
   end
 
   def new
@@ -15,7 +16,6 @@ class ListsController < ApplicationController
   def create
     @project =Project.find(params[:project_id])
     @list = @project.lists.build(params[:list])
-    # project.list.find_by(params[:project_id])
     @list.save
     redirect_to(projects_path)
   end

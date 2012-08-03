@@ -1,2 +1,18 @@
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
+
+<%= link_to "Create New Task",
+            new_list_task_path(@list),
+            :class => 'btn btn-primary' %>
+
+
+<br/>
+<br/>
+
+<h3>Tasks:</h3>
+
+<% @tasks.each do |task| %>
+  <%= task.name %> <br />
+
+<% end %>
+

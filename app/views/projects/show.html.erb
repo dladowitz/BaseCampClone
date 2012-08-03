@@ -32,5 +32,5 @@
 <br />
 <h3>Todo Lists:</h3>
 <% @lists.each do |list| %>
-  <%= list.name %> <br/>
+  <%= link_to list.name, "/lists/#{list.id}" %> <br/>
 <% end %>

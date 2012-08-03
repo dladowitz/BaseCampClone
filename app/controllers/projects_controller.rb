@@ -13,8 +13,10 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(params[:project])
-    @project.save
+    @project = Project.create(params[:project])
+    @membership = Membership.create(:user_id => current_user.id, :role => 001, :project_id =>
+                                  @project.id )
+    # @project.save
     redirect_to(projects_path)
 
 
