@@ -30,7 +30,8 @@
 <br />
 <br />
 <br />
+
+
+<% @list = List.new %>
+<%= render 'lists/list_form' , :locals => {:list => @list, :project => @project} %>
 <h3>Todo Lists:</h3>
-<% @lists.each do |list| %>
-  <%= link_to list.name, "/lists/#{list.id}" %> <br/>
-<% end %>

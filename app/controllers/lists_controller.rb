@@ -17,7 +17,7 @@ class ListsController < ApplicationController
     @project =Project.find(params[:project_id])
     @list = @project.lists.build(params[:list])
     @list.save
-    redirect_to(projects_path)
+    # redirect_to(project_path(@project))
   end
 
   def edit
