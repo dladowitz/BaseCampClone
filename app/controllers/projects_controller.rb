@@ -16,8 +16,9 @@ class ProjectsController < ApplicationController
     @project = Project.create(params[:project])
     @membership = Membership.create(:user_id => current_user.id, :role => 001, :project_id =>
                                   @project.id )
-    # @project.save
-    redirect_to(projects_path)
+
+    redirect_to project_path(@project), :notice => "Project Created with ID: #{@project.id}"
+    # render :show
 
 
   end
