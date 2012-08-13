@@ -9,7 +9,7 @@ BaseCampClone::Application.configure do
   config.action_controller.perform_caching = true
 
   # Adding config.action_mailer
-  config.action_mailer.default_url_options = {  :host => http://summercamp.herokuapp.com/ }
+  config.action_mailer.default_url_options = {  :host => 'http://summercamp.herokuapp.com' }
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
