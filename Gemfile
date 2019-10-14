@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.7'
+gem 'rails', '3.2.17'
 gem 'devise'
 gem 'quiet_assets'
 gem "twitter-bootstrap-rails" #This may need to go to the top level
